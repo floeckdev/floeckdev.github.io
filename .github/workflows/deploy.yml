@@ -36,7 +36,7 @@ jobs:
           sudo mv zola /usr/local/bin
 
       - name: Build site
-        run: zola build --base-url https://ofloeck.github.io/
+        run: zola build --base-url https://floeckdev.github.io/
 
       - name: Ensure .nojekyll file exists
         run: touch public/.nojekyll
