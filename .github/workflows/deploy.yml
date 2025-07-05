@@ -30,10 +30,16 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Setup Zola
-        uses: shalzz/zola-deploy-action@v0.17.0
-        with:
-          args: --base-url https://floeckdev.github.io/
+      - name: Install Zola
+        run: |
+          wget -q -O - https://github.com/getzola/zola/releases/download/v0.18.0/zola-v0.18.0-x86_64-unknown-linux-gnu.tar.gz | tar xzf -
+          sudo mv zola /usr/local/bin
+
+      - name: Build site
+        run: zola build --base-url https://ofloeck.github.io/
+
+      - name: Ensure .nojekyll file exists
+        run: touch public/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
