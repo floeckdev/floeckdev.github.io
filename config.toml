@@ -16,7 +16,7 @@ minify_html = false # Keep this false, as it may cause issues with some styles
 build_search_index = false # Keep this false, search is temporarily unsupported
 generate_feeds = false # Whether to generate a feed file in root, read docs for more info about rss feed
 feed_filenames = ["feed.xml"] # "feed.xml" | "atom.xml" | "rss.xml", read docs for more info
-taxonomies = [{ name = "tags" }, { name = "categories" }]
+taxonomies = [{ name = "tags" }, { name = "categories" }, { name = "tech" }]
 
 [markdown]
 highlight_code = true
@@ -55,7 +55,7 @@ footer_copyright = "© 2025 Oskar Floeck"
 footer_credits = true # Whether to show "Built with zola and serene" in footer
 
 not_found_error_text = "404 Not Found"
-not_found_recover_text = "« back to home »"
+not_found_recover_text = "Take me back!"
 
 reaction = false # Whether to enable anonymous emoji reactions (Note: You need to set up a working api endpoint to enable this feature)
 reaction_align = "right" # "left" | "center" | "right"
