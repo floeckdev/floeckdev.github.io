@@ -16,6 +16,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       
+      - name: Add CNAME file
+        run: echo "floeckdev.org" > build/CNAME
+      
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
