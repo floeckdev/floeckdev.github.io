@@ -3,9 +3,8 @@ title: "About"
 template: "default"
 ---
 
-This is a short introduction about who I am, what I do, and what interests me. Feel free to customise this section with your background, work, or hobbies.
+I'm a final-year Computer Science student and developer building things in public. This site hosts my project portfolio and technical blog, where I document what I'm learning and building.
 
-## Contact
-
-- **Email:** your.name@mail.com  
-- **GitHub:** https://github.com/your-username
+* **Currently:** Studying at RMIT, focusing on development in C and Data Science.
+* **Interests:** Linux fundamentals, system architecture, compilers & Data Science.
+* **tl;dr:** Tinkerer. Student. Writer.

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="build-hash" content="{{ build_hash }}">
+    <meta name="build-hash" content="ea21039eda5e">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>soma</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/pygments.css">
 </head>
@@ -16,15 +16,36 @@
         <a href="/about">About</a>
     </nav>
     <div class="content">
-        {% block content %} {% endblock %}
+        
+<h1>soma</h1>
+
+<p><time datetime="2024-01-01 00:00:00">Monday, 1st January, 2024</time></p>
+<p>This is soma, static sites without the noise.</p>
+<h2>What I Built</h2>
+<ul>
+<li>Feature 1</li>
+<li>Feature 2</li>
+<li>Feature 3</li>
+</ul>
+
     </div>
     <footer>
         <p>Nobody ever figures out what life is all about, and it doesn't matter. Explore the world. Nearly everything is really interesting if you go into it deeply enough. — Richard P. Feynman</p>
     </footer>
-    {% if dev_mode %}
+    
     <script>
-        {{ inject_script | safe }}
+        
+    const currentHash = document.querySelector('meta[name="build-hash"]').content;
+    setInterval(async () => {
+        const response = await fetch('/.build-info.json');
+        const buildInfo = await response.json();
+        
+        if (buildInfo.hash !== currentHash) {
+            location.reload();
+        }
+    }, 1000);
+
     </script>
-    {% endif %}
+    
 </body>
 </html>

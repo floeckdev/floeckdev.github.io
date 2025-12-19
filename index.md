@@ -1,14 +1,12 @@
 ---
-title: "Welcome!"
+title: "floeckdev"
 template: "default"
 ---
 
-This is your new static site built with Soma. Edit this file to customise your homepage.
+This site documents my journey in software. Each project is accompanied by a write-up, detailing key design decisions, trade-offs, and challenges encountered. My current interests lie in data science, low-level Linux systems and building CLI tools. 
 
-## Getting Started
+Explore the work, and feel free to connect!
 
-- Add blog posts in the `blog/` directory
-- Add projects in the `projects/` directory
-- Customise templates in the `templates/` directory
-- Run `soma build` to generate your site
-- Run `soma serve` to preview locally
+- LinkedIn: [linkedin.com/in/floeck](https://www.linkedin.com/in/floeck)
+- Email: [oskar@floeckdev.org](mailto:oskar@floeckdev.org)
+- Github: [github.com/floeckdev](https://github.com/floeckdev)

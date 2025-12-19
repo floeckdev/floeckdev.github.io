@@ -5,7 +5,7 @@
 <h2>Recent Content</h2>
 <ul>
 {% for item in items %}
-    <li><a href="{{ item.url }}">{{ item.title }}</a> - {{ item.date }}</li>
+    <li><a href="{{ item.url }}">{{ item.title }}</a> - {{ item.date | format_date }}</li>
 {% endfor %}
 </ul>
 {% endblock %}
